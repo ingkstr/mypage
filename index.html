@@ -9,17 +9,16 @@
     <style type="text/css">
       .blurred span {
         filter: blur(6px);
-  /* As pointed out by Alexander Erlandsson (@alexerlandsson), for situations that require better cross-browser support, the blur effect is easily reproduced with transpartent text + text-shadow
-  color: transparent;
-  text-shadow: 0 0 12px rgba(0,0,0,0.8); */
         }
     </style>
   </head>
+
+
   <body>
     <div class="container">
 
       <nav class="navbar sticky-top  navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#presentacion"><img src="img/ingkstr.jpg" width="30" height="30" alt=""> ingkstr</a>
+        <a class="navbar-brand" href="#presentacion"><img src="img/ingkstr.jpg" width="30" height="30" alt="" class="rounded-circle"> ingkstr</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,17 +42,20 @@
         </div>
       </nav>
 
-      <div class="jumbotron" id="presentacion">
+      <div class="jumbotron mt-3 pt-10 pb-10" id="presentacion">
         <h1 class="display-4">Hola!!!! Soy José Emanuel Castelán</h1>
         <p class="lead">¡Bienvenidos a mi portafolio!</p>
         <hr class="my-4">
-        <p>Ingeniero en Informática - Maestro en Ingeniería Industrial - Amante de la programación, Linuxero, experto en telefonía IP, finanzas personales y aficionado a las inversiones.</p>
+        <p>Permíteme presentarme. Soy Ingeniero en Informática y Maestro en Ingeniería Industrial de profesión. </p>
+        <p> Siempre me ha fascinado la programación tanto consola como Web. Linuxero como cualquier informático debe de ser. </p>
+        <p> La vida me ha llevado a tener experiencia en administración de proyectos, así como la telefonía IP en la nube </p>
+
       </div>
 
-      <div class=container id="skills">
+      <div class="container mb-3 " id="skills">
         <div class="row">
           <div class="col-md-8 col-sm-12">
-          <h1 class="display-6">Mis skills</h1>
+          <h1 class="display-6 mb-4">Mis skills</h1>
 
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
@@ -92,16 +94,16 @@
             </ul>
           </div>
           <div class="col-md-4 col-sm-12">
-            <h1 class="display-6">Orgullosamente politécnico</h1>
-            <img src="img/ipn.jpg" height="200" weight="600" />
-            <img src="img/upiicsa.png" height="200" weight="600" />
-            <img src="img/cecyt14.png" height="200" weight="600" />
+            <h1 class="display-6 mb-4">Infinítamente agradecido con...</h1>
+            <img src="img/ipn.jpg" height="150" weight="450" />
+            <img src="img/upiicsa.png" height="150" weight="450" />
+            <img src="img/cecyt14.png" height="150" weight="450" />
           </div>
         </div>
       </div>
 
-      <div class="container" id="misproyectos">
-        <h1 class="display-6">Mis proyectos relevantes</h1>
+      <div class="container mb-5" id="misproyectos">
+        <h1 class="display-6 mb-4">Mis proyectos relevantes</h1>
         <div class="accordion" id="proyectos" >
 
           <div class="card">
@@ -198,11 +200,27 @@
           </div>
 
 
+          <div class="card">
+            <div class="card-header" id="proyecto6">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#detalle6" aria-expanded="false" aria-controls="detalle6">
+                  Maqueta de proyecto integral de domótica
+                </button>
+              </h2>
+            </div>
+            <div id="detalle6" class="collapse" aria-labelledby="proyecto6" data-parent="#proyectos">
+              <div class="card-body blurred">
+                Con la integración de microcontrolador ESP8266 (Arduino IDE), Firebase, HTML5 con bootstrap y Android Studio,, realicé una pequeña maqueta en la que, mediante una aplicación web y móvil,
+                mostraba como se controlan las luces de una casa (tanto focos como tiras led), así como sensar variables como tempertura, presencia y movimiento.
+              </div>
+            </div>
+          </div>
+
           </div>
       </div>
 
-      <div class="container" id="historial">
-        <h1 class="display-6">Empresas que me reconocen</h1>
+      <div class="container mb-5" id="historial">
+        <h1 class="display-6 mb-5">Empresas que me reconocen</h1>
         <div class="card-deck">
 
             <div class="card" >
@@ -239,11 +257,9 @@
       </div>
 
       <div class="container" id="contacto">
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="card text-center text-white bg-dark col-sm-4" >
+            <div class="card text-center text-white bg-dark" >
               <div class="card-header">Contacto</div>
-              <img src="img/ingkstr.jpg" class="card-img-top" alt="yo">
+              <img src="img/ingkstr.jpg" class="rounded-circle mx-auto" alt="yo" width="200" height="200">
               <div class="card-body">
 
                 <p class="card-text">
@@ -254,10 +270,11 @@
                   <a href="https://www.linkedin.com/in/ingkstr/"><img src="img/linkedin.png" width="40" height="40" /></a>
                   <a href="https://github.com/ingkstr/"><img src="img/github.png" width="40" height="40" /></a>
                 </p>
+                <hr class="my-5">
+                <p class= "h6">Página hecha con <img src="img/bootstrap.png" height="50" weight="50" /> </p>
               </div>
             </div>
-            <div class="col-sm-4"></div>
-        </div>
+
       </div>
 
     </div>

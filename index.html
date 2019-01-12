@@ -6,26 +6,21 @@
     <title>José Emanuel Castelán Cortés</title>
     <!-- El frontend no es mi fuerte, pero lo que hago debe verse bien ;) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <style type="text/css">
-      .blurred span {
-        filter: blur(6px);
-        }
-    </style>
-  </head>
+    <link rel="stylesheet" href="css/style.css">
 
+  </head>
 
   <body>
     <div class="container">
 
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="#presentacion"><img src="img/ingkstr.jpg" width="30" height="30" alt="" class="rounded-circle"> ingkstr</a>
-
+      <nav class="navbar minavbar sticky-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#presentacion"><img src="img/ingkstr.jpg" width="45" height="45" alt="ingkstr" class="rounded-circle mr-3"> ingkstr</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
+            <!--
             <li class="nav-item ">
               <a class="nav-link" href="#skills">Skills y preparación</a>
             </li>
@@ -35,124 +30,114 @@
             <li class="nav-item">
               <a class="nav-link" href="#historial">Historial de empleos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
+            -->
           </ul>
           <span class="navbar-text">
-            José Emanuel Castelán Cortés
+            <a href="#contacto"><button type="button" class="btn btn-contacto">Contáctame!!! :D</button></a>
           </span>
         </div>
       </nav>
 
-      <div class="jumbotron mt-3 pt-10 pb-10" id="presentacion">
-        <h1 class="display-4">Hola!!!! Soy José Emanuel Castelán</h1>
-        <p class="lead">¡Bienvenidos a mi portafolio!</p>
-        <hr class="my-4">
+      <div class="jumbotron mijumbotron mt-5 mb-5 pt-10 pb-10" id="presentacion">
+        <h1 class="display-5 text-center mt-5 mb-5">Hola, Soy José Emanuel Castelán. Es una alegría que visites mi portafolio.</h1>
+        <hr class="mt-5 mb-5">
         <p>Permíteme presentarme. Soy Ingeniero en Informática y Maestro en Ingeniería Industrial de profesión. </p>
         <p> Siempre me ha fascinado la programación tanto consola como Web. Linuxero como cualquier informático debe de ser. </p>
         <p> La vida me ha llevado a tener experiencia en administración de proyectos, así como la telefonía IP en la nube </p>
 
       </div>
 
-      <div class="container mb-3 " id="skills">
-        <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <h1 class="display-6 mb-4">Mis skills</h1>
+      <div class="container mb-5" id="skills">
+        <h1 class="display-6 mb-4 text-center">Mis skills</h1>
+        <ul class="list-group list-group-mine">
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-colored">
+            <div class="media">
+              <img src="img/python.png" height="30" weight="30" class="mr-3" /> Lenguaje de programación Python. Frameworks Click y Django.
+            </div>
+            <span class="badge badge-primary badge-pill">6 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-uncolored">
+            <div class="media">
+              <img src="img/java.png" height="30" weight="30" class="mr-3" />
+              Lenguaje de programación Java (GUI y Web mediante JSP)
+            </div>
+            <span class="badge badge-primary badge-pill">10 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-colored">
+            <div class="media">
+              <img src="img/linux.png" height="30" weight="30" class="mr-3" />
+              Administración de servidores Linux (Distribuciones Ubuntu Server y CentOS Server) y desarrollo Bash
+            </div>
+            <span class="badge badge-primary badge-pill">8 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-uncolored">
+            <div class="media">
+              <img src="img/html5.png" height="30" weight="30" class="mr-3" />
+              Diseño Web en HTML5 y framework Bootstrap
+            </div>
+            <span class="badge badge-primary badge-pill">4 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-colored">
+            <div class="media">
+              <img src="img/sql.png" height="30" weight="30" class="mr-3" />
+              Lenguaje SQL (aplicado a sistemas manejadores SQL Server, MySQL, PostgreSQL, SQLite)
+            </div>
+            <span class="badge badge-primary badge-pill">10 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-uncolored">
+            <div class="media">
+              <img src="img/pmp.png" height="30" weight="30" class="mr-3" />
+              Tópicos de administración de proyectos mediante metodología PMP
+            </div>
+            <span class="badge badge-primary badge-pill">3 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-colored">
+            <div class="media">
+              <img src="img/voip.png" height="30" weight="30" class="mr-3" />
+              Protocolo SIP, configuración de telefonía IP y administración Softswitch
+            </div>
+            <span class="badge badge-primary badge-pill">3 años</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-uncolored">
+            <div class="media">
+              <img src="img/git.png" height="30" weight="30" class="mr-3" />
+              Administración de versiones Git
+            </div>
+            <span class="badge badge-primary badge-pill">1 año</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-colored">
+            <div class="media">
+              <img src="img/arduino.png" height="30" weight="30" class="mr-3" />
+              Diseño de circuitos con microprocesadores Arduino
+            </div>
+            <span class="badge badge-primary badge-pill">1 año</span>
+          </li>
+        </ul>
+      </div>
 
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
-                <div class="media">
-                  Lenguaje de programación Python. Frameworks Click y Django. <img src="img/python.png" height="20" weight="20" /><img src="img/django.jpg" height="20" weight="20"/>
-                </div>
-                <span class="badge badge-primary badge-pill">6 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="media">
-                  Lenguaje de programación Java (GUI y Web mediante JSP)
-                  <img src="img/java.png" height="20" weight="20"/>
-                </div>
-                <span class="badge badge-primary badge-pill">10 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
-                <div class="media">
-                  Administración de servidores Linux (Distribuciones Ubuntu Server y CentOS Server) y desarrollo Bash
-                  <img src="img/linux.png" height="20" weight="20" /> <img src="img/centos.png" height="20" weight="20" />  <img src="img/ubuntu.png" height="20" weight="20" /> <img src="img/bash.png" height="20" weight="20" />
-                </div>
-                <span class="badge badge-primary badge-pill">8 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="media">
-                  Diseño Web en HTML5 y framework Bootstrap
-                  <img src="img/html5.png" height="20" weight="20" /><img src="img/bootstrap.png" height="20" weight="20" />
-                </div>
-                <span class="badge badge-primary badge-pill">4 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
-                <div class="media">
-                  Lenguaje SQL (aplicado a sistemas manejadores SQL Server, MySQL, PostgreSQL, SQLite)
-                  <img src="img/sql.png" height="20" weight="20" />
-              </div>
-                <span class="badge badge-primary badge-pill">10 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="media">
-                  Tópicos de administración de proyectos mediante metodología PMP
-                  <img src="img/pmp.jpg" height="20" weight="20" />
-                </div>
-                <span class="badge badge-primary badge-pill">3 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
-                <div class="media">
-                  Protocolo SIP, configuración de telefonía IP y administración Softswitch
-                  <img src="img/voip.jpg" height="20" weight="20" /><img src="img/sip.png" height="20" weight="20" />
-                </div>
-                <span class="badge badge-primary badge-pill">3 años</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="media">
-                  Administración de versiones Git
-                  <img src="img/git.png" height="20" weight="20" />
-                </div>
-                <span class="badge badge-primary badge-pill">1 año</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
-                <div class="media">
-                  Diseño de circuitos con microprocesadores Arduino
-                  <img src="img/arduino.png" height="20" weight="20" />
-                </div>
-                <span class="badge badge-primary badge-pill">1 año</span>
-              </li>
-
-            </ul>
-          </div>
-
-          <div class="col-md-4 col-sm-12">
-            <h1 class="display-6 mb-4">Infinítamente agradecido con...</h1>
-            <a href="https://www.ipn.mx/"><img src="img/ipn.jpg" height="150" weight="450" /></a>
-            <a href="https://www.upiicsa.ipn.mx/"><img src="img/upiicsa.png" height="150" weight="450" /></a>
-            <a href="http://www.cecyt14.ipn.mx"><img src="img/cecyt14.png" height="150" weight="450" /></a>
-            <a href="https://platzi.com/"><img src="img/platzi.png" height="150" weight="450" /></a>
-            <a href="https://beatandbit.com"><img src="img/beatandbit.png" height="100" weight="300" /></a>
-          </div>
+      <div class="jumbotron mijumbotron mt-5 mb-5 pt-10 pb-10 text-center" id="formacion">
+        <h1 class="display-6 mb-4">Les quiero dedicar un espacio para agradecer a las instituciones que me dieron formación.</h1>
+          <div class="row">
+            <div class="col-md-4 col-sm-12 mt-5"><a href="https://www.ipn.mx/"><img src="img/ipn.png" height="150" weight="450" /></a></div>
+            <div class="col-md-4 col-sm-12 mt-5"><a href="https://www.upiicsa.ipn.mx/"><img src="img/upiicsa.png" height="150" weight="450" /></a></div>
+            <div class="col-md-4 col-sm-12 mt-5"><a href="http://www.cecyt14.ipn.mx"><img src="img/cecyt14.png" height="150" weight="450" /></a></div>
+            <div class="col-md-6 col-sm-12 mt-5"><a href="https://platzi.com/"><img src="img/platzi.png" height="150" weight="450" /></a></div>
+            <div class="col-md-6 col-sm-12 mt-5"><a href="https://beatandbit.com"><img src="img/beatandbit.png" height="150" weight="450" /></a></div>
         </div>
       </div>
 
       <div class="container mb-5" id="misproyectos">
-        <h1 class="display-6 mb-4">Mis proyectos relevantes</h1>
-        <div class="accordion" id="proyectos" >
+        <h1 class="display-6 mb-4 text-center">Mis proyectos relevantes</h1>
+        <div class="accordion miacordeon" id="proyectos" >
 
-          <div class="card border-info ">
-            <div class="card-header text-info" id="proyecto1">
-
-                <button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#detalle1" aria-expanded="false" aria-controls="detalle1">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader1" id="proyecto1">
+                <button class="btn btn-colored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle1" aria-expanded="false" aria-controls="detalle1">
+                  Aplicación web para monitorear interfaces de servicio IPTV
                 </button>
-                <small><strong>Aplicación web para monitorear interfaces de servicio IPTV</strong></small>
-
             </div>
             <div id="detalle1" class="collapse" aria-labelledby="proyecto1" data-parent="#proyectos">
-              <div class="card-body blurred text-info">
+              <div class="card-body blurred">
                 Para atender la problemática de tiempos de resolución de fallas en servicio de IPTV, he desarrollado una página accesible para
                  el personal interno de operaciones y atención técnica, en la que podían revisar el estatus de una interface en
                  los equipos de enrutamiento. Este fue desarrollado con el framework Django, así como comandos en Python para la
@@ -161,17 +146,14 @@
             </div>
           </div>
 
-          <div class="card border-primary">
-            <div class="card-header text-primary" id="proyecto2">
-
-                <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#detalle2" aria-expanded="false" aria-controls="detalle2">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader2" id="proyecto2">
+                <button class="btn btn-uncolored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle2" aria-expanded="false" aria-controls="detalle2">
+                  Levantamiento técnico de plataforma de conmutador de telefonía IP en la nube
                 </button>
-                <small><strong>Levantamiento técnico de plataforma de conmutador de telefonía IP en la nube</strong></small>
-
             </div>
             <div id="detalle2" class="collapse" aria-labelledby="proyecto2" data-parent="#proyectos">
-              <div class="card-body blurred text-primary">
+              <div class="card-body blurred">
                 Durante el proyecto de implementación de la plataforma clase 4 de telefonía
                 IP <span> XXX </span> del proveedor <span> XXXXXXX </span>, se llevó a cabo la revisión de las facilidades
                 ofrecidas en la plataforma, así como la validación de su correcto funcionamiento. De manera interna, se revisaron
@@ -181,17 +163,14 @@
              </div>
           </div>
 
-          <div class="card border-info">
-            <div class="card-header text-info" id="proyecto3">
-
-                <button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#detalle3" aria-expanded="false" aria-controls="detalle3">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader1" id="proyecto3">
+                <button class="btn btn-colored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle3" aria-expanded="false" aria-controls="detalle3">
+                  Levantamiento técnico de comunicación de red de voz pública con plataforma en la nube de comunicaciones unificadas (UCaaS)
                 </button>
-                <small><strong>Levantamiento técnico de comunicación de red de voz pública con plataforma en la nube de comunicaciones unificadas (UCaaS)</strong></small>
-
             </div>
             <div id="detalle3" class="collapse" aria-labelledby="proyecto3" data-parent="#proyectos">
-              <div class="card-body blurred text-info">
+              <div class="card-body blurred">
                 Igualmente que con la plataforma de conmutación de telefonía IP en la nube, se revisaron los requerimientos
                 técnicos de interconexión entre la red pública de telefonía con el servicio en la nube <span> XXXXX </span> del
                 proveedor <span> XXXXXX </span> que ofrecia funcionalidades para ofrecer comunicaciones unificadas (conferencias,
@@ -202,17 +181,14 @@
             </div>
           </div>
 
-          <div class="card border-primary">
-            <div class="card-header text-primary" id="proyecto4">
-
-                <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#detalle4" aria-expanded="false" aria-controls="detalle4">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader2" id="proyecto4">
+                <button class="btn btn-uncolored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle4" aria-expanded="false" aria-controls="detalle4">
+                  Aplicación local para generación de reportes de cumplimiento de SLA's
                 </button>
-                <small><strong>Aplicación local para generación de reportes de cumplimiento de SLA's</strong></small>
-
             </div>
             <div id="detalle4" class="collapse" aria-labelledby="proyecto4" data-parent="#proyectos">
-              <div class="card-body blurred text-primary">
+              <div class="card-body blurred">
                 Con el fin de reducir los tiempos en la generación de reportes de cumplimiento de SLA's los cuales debían de ser
                 entregados en un tiempo determinado por contrato, se elimina la necesidad de plantillas en Excel para sustituirlas
                 por una aplicación en Java que consulta la base de datos del sistema de monitoreo de red <span> XXXXXXXXXX </span> y las plasme
@@ -221,17 +197,14 @@
             </div>
           </div>
 
-          <div class="card border-info">
-            <div class="card-header text-info" id="proyecto5">
-
-                <button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#detalle5" aria-expanded="false" aria-controls="detalle5">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader1" id="proyecto5">
+                <button class="btn btn-colored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle5" aria-expanded="false" aria-controls="detalle5">
+                  Aplicación web de compilación de información de centrales telefónicas TDM
                 </button>
-                <small><strong>Aplicación web de compilación de información de centrales telefónicas TDM</strong></small>
-
             </div>
             <div id="detalle5" class="collapse" aria-labelledby="proyecto5" data-parent="#proyectos">
-              <div class="card-body blurred text-info">
+              <div class="card-body blurred">
                 Debido a los recursos limitados de las plataformas de voz TDM <span> XXXX XXXXXXX </span> usadas en su momento,
                 se crea una aplicación con framework Django que muestra los reportes de enrutamientos generados en las centrales,
                 así como el estatus de sus interfaces, reportes de tráfico entrante y saliente y documentación de los procedimientos
@@ -240,33 +213,28 @@
             </div>
           </div>
 
-
-          <div class="card border-primary">
-            <div class="card-header text-primary" id="proyecto6">
-                <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#detalle6" aria-expanded="false" aria-controls="detalle6">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader2" id="proyecto6">
+                <button class="btn btn-uncolored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle6" aria-expanded="false" aria-controls="detalle6">
+                  Maqueta de proyecto integral de domótica
                 </button>
-                <small><strong>Maqueta de proyecto integral de domótica</strong></small>
             </div>
             <div id="detalle6" class="collapse" aria-labelledby="proyecto6" data-parent="#proyectos">
-              <div class="card-body blurred text-primary">
+              <div class="card-body blurred">
                 Con la integración de microcontrolador ESP8266 (Arduino IDE), Firebase, HTML5 con bootstrap y Android Studio,, realicé una pequeña maqueta en la que, mediante una aplicación web y móvil,
                 mostraba como se controlan las luces de una casa (tanto focos como tiras led), así como sensar variables como tempertura, presencia y movimiento.
               </div>
             </div>
           </div>
 
-          <div class="card border-info">
-            <div class="card-header text-info" id="proyecto7">
-
-                <button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#detalle7" aria-expanded="false" aria-controls="detalle7">
-                  +
+          <div class="card micard">
+            <div class="card-header miheader1" id="proyecto7">
+                <button class="btn btn-colored btn-block collapsed mr-3" type="button" data-toggle="collapse" data-target="#detalle7" aria-expanded="false" aria-controls="detalle7">
+                  Versión personal de Instagram "Platzigram"
                 </button>
-                <small><strong>Versión personal de Instagram "Platzigram"</strong></small>
-
             </div>
             <div id="detalle7" class="collapse" aria-labelledby="proyecto7" data-parent="#proyectos">
-              <div class="card-body blurred text-info">
+              <div class="card-body blurred">
                 <p>De la mano con mi profesor en línea de Django en Platzi, se realizó una versión de Instagram llamada "Platzigram", con el fin
                 de practicar mis conocimientos de la herramiento y actualizarme en elementos de Class-Based-View. </p>
                 <p>Al dar click <a href="https://github.com/ingkstr/platzigram">aquí</a>, podrás ver el código en Github</p>
@@ -277,12 +245,18 @@
           </div>
       </div>
 
-      <div class="container mb-5" id="historial">
-        <h1 class="display-6 mb-5">Grandes empresas con las que he colaborado</h1>
+      <div class="jumbotron mijumbotron mb-5 text-center mt-5 mb-5 pt-10 pb-10" id="historial">
+        <h1 class="display-6 mb-5">Me siento orgulloso de haber trabajado para grandes empresas del ramo de las telecomunicaciones</h1>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mt-5 mb-5"><a href="https://www.maxcom.com.mx/"><img src="img/maxcom.png" alt="Maxcom" weight="50" height="100"></a></div>
+          <div class="col-md-6 col-sm-12 mt-5 mb-5"><a href="https://www.bestel.com.mx/"><img src="img/izzi.png" alt="Bestel" weight="50" height="80"></a></div>
+          <div class="col-md-12 col-sm-12 mt-5 mb-5"><a href="https://www.att.com.mx/"><img src="img/nextel.png" alt="Nextel" weight="50" height="70"></a></div>
+        </div>
+        <!--
         <div class="card-deck">
 
-            <div class="card" >
-              <img src="img/maxcom.png" class="card-img-top" alt="Maxcom">
+            <div class="card cardempresas" >
+              <img src="img/maxcom.png" class="card-img-top" alt="Maxcom" height="100" >
               <div class="card-body">
                 <p><h5 class="card-title">Ingeniero Softswitch (2016 - presente)</h5></p>
                 <p><h5 class="card-title">Ingeniero O&M Switch (2011 - 2015)</h5></p>
@@ -293,8 +267,8 @@
             </div>
 
 
-              <div class="card" >
-                <img src="img/bestel.png" class="card-img-top" alt="Bestel">
+              <div class="card cardempresas" >
+                <img src="img/bestel.png" class="card-img-top" alt="Bestel" height="100">
                 <div class="card-body">
                   <h5 class="card-title">Ingeniero Q&A NOC (2015 - 2016)</h5>
                   <p class="card-text">Auditoría de documentación de ordenes de nuevos servicios de voz y datos</p>
@@ -303,8 +277,8 @@
                 </div>
               </div>
 
-              <div class="card" >
-                <img src="img/nextel.jpg" class="card-img-top" alt="Nextel">
+              <div class="card cardempresas" >
+                <img src="img/nextel.jpg" class="card-img-top" alt="Nextel" height="100">
                 <div class="card-body">
                   <h5 class="card-title">Analista - Programador Java (2010 - 2011)</h5>
                   <p class="card-text">Programación de interfaces Web y locales de conciliación de accesos a sistemas corporativos</p>
@@ -313,30 +287,31 @@
               </div>
 
           </div>
+        -->
       </div>
 
-      <div class="container" id="contacto">
-            <div class="card text-center text-white bg-dark" >
-              <div class="card-header">Contacto</div>
+      <div class="jumbotron mijumbotronfinal mt-5 mb-5 pt-10 pb-10" id="contacto">
+            <div class="text-center">
               <img src="img/ingkstr.jpg" class="rounded-circle mx-auto" alt="yo" width="200" height="200">
-              <div class="card-body">
+              <p class="mt-3"><strong>M.I. José Emanuel Castelán Cortés</strong></p>
 
-                <p class="card-text">
-                  <p>Te invito a contactarme si deseas realizar alguna colaboración en un proyecto o empleo interesante.</p>
-                  <p><a href="mailto:ingkstr@gmail.com"><button type="button" class="btn btn-outline-primary">Escribeme</button></a> </p>
-                  <a href="https://www.facebook.com/ingkstr"><img src="img/facebook.png" width="40" height="40" /></a>
-                  <a href="https://www.instagram.com/ingkstr/"><img src="img/instagram.png" width="40" height="40" /></a>
-                  <a href="https://www.linkedin.com/in/ingkstr/"><img src="img/linkedin.png" width="40" height="40" /></a>
-                  <a href="https://github.com/ingkstr/"><img src="img/github.png" width="40" height="40" /></a>
-                </p>
-                <hr class="my-5">
-                <p><small>Página hecha con <img src="img/bootstrap.png" height="50" weight="50" /></small></p>
+              <div class="mt-5">
+                  <p class="mb-5">Te invito a contactarme si deseas realizar alguna colaboración en un proyecto o empleo interesante.</p>
+                  <a href="https://www.facebook.com/ingkstr"><img class="ml-5 mr-5" src="img/facebook.png" width="40" height="40" /></a>
+                  <a href="https://www.instagram.com/ingkstr/"><img class="ml-5 mr-5" src="img/instagram.png" width="40" height="40" /></a>
+                  <a href="https://www.linkedin.com/in/ingkstr/"><img class="ml-5 mr-5" src="img/linkedin.png" width="40" height="40" /></a>
+                  <a href="https://github.com/ingkstr/"><img class="ml-5 mr-5" src="img/github.png" width="40" height="40" /></a>
+                  <a href="mailto:ingkstr@gmail.com"><img class="ml-5 mr-5" src="img/email.png" width="40" height="40" /></a>
+
               </div>
+              <hr class="my-5">
+              <p><small><strong>Página hecha con <img src="img/bootstrap.png" height="50" weight="50" /></strong></small></p>
             </div>
-
       </div>
 
     </div>
+
+
     <!-- JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

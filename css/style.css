@@ -1,0 +1,95 @@
+:root {
+
+  /*En la versión 1 se usaban estos colores
+  --azulbasico: #e3f2fd ;
+  --grisbasico: #BDBDBD ;
+  --azulhover: #0000ff ;
+  */
+  --azulbasico: #81BEF7 ;
+  --grisbasico: #EFF5FB ;
+  --azulhover: #0101DF ;
+}
+
+.minavbar {
+  background-color: #ffffff;
+}
+
+.mijumbotron {
+  padding-top: 100px;
+  background-color: var(--grisbasico);
+  padding-bottom: 100px;
+}
+
+.mijumbotronfinal {
+  padding-top: 100px;
+  background-color: var(--azulbasico);
+
+}
+
+.blurred span {
+  filter: blur(6px);
+  }
+
+.list-group-mine .list-group-item-colored {
+  background-color: var(--azulbasico);
+  border-top: 1px solid var(--grisbasico);
+  border-left-color: var(--grisbasico);
+  border-right-color: var(--grisbasico);
+}
+
+.list-group-mine .list-group-item-uncolored {
+  background-color: var(--grisbasico);
+  border-top: 1px solid var(--grisbasico);
+  border-left-color: var(--grisbasico);
+  border-right-color: var(--grisbasico);
+}
+
+.miacordeon .micard {
+  border-top: 1px solid var(--grisbasico);
+  border-left-color: var(--grisbasico);
+  border-right-color: var(--grisbasico);
+}
+
+.miacordeon .miheader1 {
+  background-color: var(--azulbasico);
+}
+
+.miacordeon .miheader2 {
+  background-color: var(--grisbasico);
+}
+
+
+
+.btn-contacto {
+  border-width: 2px;
+  border-color: var(--azulbasico);
+  color: var(--azulbasico);
+  font-weight: bolder;
+}
+
+.btn-contacto:hover {
+  background-color: var(--azulbasico);
+  color: white;
+}
+
+.btn-colored {
+  background-color: var(--azulbasico);
+  border-color: var(--azulbasico);
+  color: black;
+}
+
+.btn-colored:hover {
+  color: var(--azulhover);
+  font-weight: bolder;
+}
+
+.btn-uncolored {
+  background-color: var(--grisbasico);
+  border-color: var(--grisbasico);
+  color: black;
+}
+
+.btn-uncolored:hover {
+  color: var(--azulhover);
+  font-weight: bolder;
+}
